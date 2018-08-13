@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueExtras.ttc">
+            <string>HelveticaNeue-CondensedBlack</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScoreCellId" rowHeight="75" id="KGk-i7-Jjw" customClass="ScoreTableViewCell" customModule="colorMagic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMX-ap-vvt">
+                        <rect key="frame" x="7" y="11" width="53" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="Ddm-Hb-o9A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh4-fg-ilB">
+                        <rect key="frame" x="251" y="11" width="53" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="8gS-e5-E9K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o63-bb-FhF">
+                        <rect key="frame" x="68" y="11" width="175" height="53"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o63-bb-FhF" firstAttribute="bottom" secondItem="YMX-ap-vvt" secondAttribute="bottom" id="4Fq-6v-maM"/>
+                    <constraint firstAttribute="bottom" secondItem="YMX-ap-vvt" secondAttribute="bottom" constant="10.5" id="CPp-Pd-IuV"/>
+                    <constraint firstAttribute="trailing" secondItem="Eh4-fg-ilB" secondAttribute="trailing" constant="16" id="K4n-GN-3ww"/>
+                    <constraint firstItem="o63-bb-FhF" firstAttribute="leading" secondItem="YMX-ap-vvt" secondAttribute="trailing" constant="8" id="SQO-GJ-EFS"/>
+                    <constraint firstItem="Eh4-fg-ilB" firstAttribute="leading" secondItem="o63-bb-FhF" secondAttribute="trailing" constant="8" id="bcp-oy-01F"/>
+                    <constraint firstItem="o63-bb-FhF" firstAttribute="top" secondItem="YMX-ap-vvt" secondAttribute="top" id="cFK-Wl-hin"/>
+                    <constraint firstItem="Eh4-fg-ilB" firstAttribute="bottom" secondItem="o63-bb-FhF" secondAttribute="bottom" id="eTz-xj-CL7"/>
+                    <constraint firstItem="YMX-ap-vvt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="eao-R9-uhn"/>
+                    <constraint firstItem="YMX-ap-vvt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="eoY-2g-79h"/>
+                    <constraint firstItem="Eh4-fg-ilB" firstAttribute="top" secondItem="o63-bb-FhF" secondAttribute="top" id="mSA-Y8-AgC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLbl" destination="o63-bb-FhF" id="m9f-C6-Otx"/>
+                <outlet property="rankLbl" destination="YMX-ap-vvt" id="zoD-KB-rqH"/>
+                <outlet property="scoreLbl" destination="Eh4-fg-ilB" id="oYn-Wf-IIZ"/>
+            </connections>
+            <point key="canvasLocation" x="444.5" y="-9.5"/>
+        </tableViewCell>
+    </objects>
+</document>
